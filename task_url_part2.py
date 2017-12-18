@@ -34,4 +34,6 @@ def main():
             print(" Last_seen: " + str(user['last_seen'])+ '\n')
             print(' ' + '-*-*'*12 + '\n')
 
-main()
+            
+if __name__ == '__main__':
+   main()
