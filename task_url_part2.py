@@ -16,9 +16,9 @@ def main():
     try:
       html = urllib.request.urlopen(url_constractor(*ids)).read()
     except requests.exceptions.HTTPError as e:
-        print('>>{}!'.format(e)) #~
+        print('>>{}!'.format(e)) 
     except requests.exceptions.ConnectionError as e:
-        print('>>{}!'.format(e)) #~
+        print('>>{}!'.format(e)) 
     else:
         data = json.loads(html)
         s = data.get('response')
